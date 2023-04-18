@@ -1,14 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Solid from "../../apps/Solid";
+import React from "../../apps/ticket/src/App";
 
 export function getStaticPaths() {
-  // we need to define all the possible solid routes so astro knows to redirect here
+  // we need to define all the possible react routes so astro knows to redirect here
   return [{ params: { route: undefined } }, { params: { route: "page1" } }];
 }
 ---
 
-<Layout title="Solid">
+<Layout title="React">
   <h1>This is rendered statically by Astro</h1>
-  <Solid client:only="solid-js" />
+  <React client:only="react" />
 </Layout>

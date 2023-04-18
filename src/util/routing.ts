@@ -1,1 +1,1 @@
-export const routeBase = "/micro-frontends-astro";
+export const routeBase = "";
